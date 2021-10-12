@@ -2,67 +2,41 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+১. firebase এর কনসোল এ গিয়ে নতুন একটা প্রজেক্ট তৈরি করা। সেখানে গিয়ে authentication এ গিয়ে যে লগইন সিস্টেম ইমপ্লিমেন্ট করবে সেই প্রসেস এনাবেল করো। 
 
-### `npm start`
+৪. তোমার প্রজেক্ট এ firebase এর কনফিগারেশন নিয়ে এসে। ওয়েবসাইট এ লগইন বাটন ক্রিয়েট করে সেটার ইভেন্ট হ্যান্ডলার এর মধ্যে firebase এর ডকুমেন্টেশন থেকে কোড এনে বসিয়ে দাও। 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+৫. যদি লগইন সাকসেসফুল হয় তাহলে user এর স্টেট্ ডিসেটাকে ইনিশিয়ালাইজ করার সিস্টেম তুমি জানো। তাহলে সেটা করে ফেলো। 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+৬. যেকোন একটা অথেনটিকেশন সিস্টেম সেটা হতে পারে গুগল বা অন্য কিছু একটা। সেটা ঠিক করে। লগইন কম্পোনেন্ট এ সেটা ইমপ্লিমেন্ট করার জন্য useFirebase নামক হুক তৈরি করে সেটাকে ইমপ্লিমেন্ট করে ফেলো। কি আছে জীবনে 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+৭. যে ইউজের লগইন করেছে। তার নাম হেডার নামক কম্পোনেন্ট দেখাও 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+৮. এইবার Auth এর জন্য একটা কনটেক্সট বানাও। সেটার প্রোভাইডার বানাও। এবং সেই রিলেটেড একটা হুক useAuth নাম দিয়ে দাও। 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+৯. app.js এ গিয়ে তোমার Auth Provider ইউজ করে ফেলো। 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+১০. এইবার যেখানে যেখানে দরকার সেখানে সেখনে useAuth ইউজ করে অথেনটিকেশন রিলেটেড কাজগুলো করো। 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+১১. Private Route নামে একটা কম্পোনেন্ট বানাও। সেটা মুখস্ত করার দরকার নাই। বরং react রাউটার এর ওয়েবসাইট দেখে দেখে বুঝে বুঝে করো।  
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+১২. প্রাইভেট রাউট ইউজ করো। all.js এ মিনিমাম দুইটা 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+চ্যালেঞ্জিং: 
 
-### Making a Progressive Web App
+১৩. ইউজার লগইন করা না থাকলে কোন একটা প্রাইভেট রাউটে ক্লিক করলে তাকে লগইন রাউট এ নিয়ে যাবে। তারপর লগইন হয়ে গেলে সে যেখানে যাওয়ার জন্য ক্লিক দিছিলো। সেখানে তাকে নিয়ে যাবে। এইটা একটা ভিডিওতে বলা হয়েছে। দেখো সেই ভিডিও খুঁজে বের করে। সেই অনুসারে করতে পারো কিনা। 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+১৪. [অপশনাল] আমরা যেসব Firebase এর Auth Provider ইউজ করেছি (গুগল, পাসওয়ার্ড দিয়ে, ফেইসবুক, গিটহাব ) এইগুলা ছাড়া তুমি অন্য আরেকটা করার চেষ্টা করো। অর্থাৎ নিজে নিজে করার চেষ্টা করো। ডুকুমেন্টেশন দেখে দেখে। তাহলে ফিউচারে নতুন কিছু কখনো করার দরকার পড়লে। তোমার আর সমস্যা হবে না। 
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
